@@ -30,8 +30,8 @@ export const content = {
     appStore: { url: '#' },
     googlePlay: { url: '#' },
     stats: [
-      { value: 120, suffix: '', label: '合作店家＋' },
-      { value: 3485, suffix: '', label: '註冊車主' },
+      { value: 10, suffix: '', label: '合作店家＋' },
+      { value: 69, suffix: '', label: '註冊車主' },
       { value: 98, suffix: '%', label: '滿意回饋' },
     ],
     chips: [
@@ -80,7 +80,7 @@ export const content = {
   },
 
   trust: [
-    { value: 120, unit: '＋', label: '合作店家遍布全台' },
+    { value: 10, unit: '＋', label: '合作店家遍布全台' },
     { value: 3, unit: '大類服務', label: '美容・保養・改裝' },
     { value: 60, unit: '秒', label: '完成線上預約' },
     { value: 24, unit: '/7', label: '客服與通知' },
@@ -116,7 +116,7 @@ export const content = {
     cta: '立即申請入駐',
     counter: {
       label: '剩餘名額',
-      left: 48,   // ← 唯一需要手動更新的數字，其他文字自動換算
+      left: 40,   // ← 唯一需要手動更新的數字，其他文字自動換算
       total: 50,
     },
   },
@@ -189,7 +189,7 @@ export const content = {
       shop:    { label: '店家名稱',   placeholder: '例：極速車業',        autocomplete: 'organization' },
       contact: { label: '聯絡人姓名', placeholder: '例：王小明',           autocomplete: 'name' },
       phone:   { label: '手機號碼',   placeholder: '例：0912 345 678',    autocomplete: 'tel' },
-      email:   { label: 'Email',      placeholder: 'contact@example.com', autocomplete: 'email' },
+      email:   { label: 'Email',      placeholder: 'contact@gmail.com', autocomplete: 'email' },
       service: {
         label: '主要服務類型',
         options: [
@@ -240,11 +240,11 @@ export const content = {
       },
     ],
     contact: [
-      { icon: 'Mail',   value: 'partner@carmate.tw' },
-      { icon: 'Phone',  value: '+886 2 2700 0000' },
+      { icon: 'Mail',   value: 'tiangongcarbeauty@gmail.com' },
+      { icon: 'Phone',  value: '+886916789758' },
       { icon: 'MapPin', value: '台北市中正區重慶南路一段57號10樓之17' },
     ],
-    copy: '© 2026 Carmate Inc. 卡媒科技股份有限公司・統編 12345678',
+    copy: ' 俥盛科技股份有限公司',
     legal: [
       { label: '隱私權政策', href: '#' },
       { label: '服務條款',   href: '#' },
