@@ -810,10 +810,16 @@
     .chip .hd  { font-size: 11px; }
   }
   @media (max-width: 600px) {
-    .chip { display: none !important; }
-    .hero-visual  { min-height: 540px; }
-    .phone-stage  { height: 540px; }
-    .phone { width: 220px; height: 440px; }
+    .hero-visual  { min-height: 500px; }
+    .phone-stage  { height: 500px; }
+    .phone { width: 185px; height: 385px; }
+    .chip {
+      padding: 3px 6px 3px 3px;
+      gap: 3px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.10);
+    }
+    .chip .ic { width: 18px; height: 18px; font-size: 10px; }
+    .chip .hd  { font-size: 8px; }
   }
 
   /* ---------- Trust Strip ---------- */
