@@ -341,11 +341,14 @@ export function Hero() {
                   </span>
                 </a>
               </div>
+              {/* 暫時隱藏：Hero 三個數字（合作店家／註冊車主／滿意回饋）。要加回來把下方整段解除註解 */}
+              {/*
               <div className="hero-stats">
                 {hero.stats.map((stat) => (
                   <HeroStat key={stat.label} value={stat.value} suffix={stat.suffix} label={stat.label} />
                 ))}
               </div>
+              */}
             </Reveal>
           </div>
 

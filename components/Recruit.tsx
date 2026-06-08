@@ -47,7 +47,8 @@ export function Recruit() {
               </a>
             </div>
 
-            {/* Counter card */}
+            {/* Counter card — 暫時隱藏（剩餘名額藍卡）。要加回來把下方整段解除註解 */}
+            {/*
             <div className="recruit-counter">
               <div className="l">{counter.label}</div>
               <div className="big num">
@@ -59,6 +60,7 @@ export function Recruit() {
               </div>
               <div className="counter-foot">{footText}</div>
             </div>
+            */}
           </div>
         </Reveal>
       </div>
