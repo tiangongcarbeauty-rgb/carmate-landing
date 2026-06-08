@@ -20,6 +20,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: content.meta.title,
   description: content.meta.description,
+  icons: {
+    icon: '/carmate-logo.png',
+    apple: '/carmate-logo.png',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
