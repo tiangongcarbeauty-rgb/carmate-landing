@@ -1,3 +1,9 @@
+// ⭐ 唯一需要手動更新的兩個數字：總名額、剩餘名額
+const RECRUIT_TOTAL = 50
+const RECRUIT_LEFT = 49
+// 已合作店家數 = 總名額 − 剩餘名額（自動換算，全站連動）
+const PARTNER_COUNT = RECRUIT_TOTAL - RECRUIT_LEFT
+
 export const content = {
   meta: {
     title: 'Carmate ｜ 養車大小事，App 全搞定',
@@ -30,7 +36,7 @@ export const content = {
     appStore: { url: '#' },
     googlePlay: { url: '#' },
     stats: [
-      { value: 1, suffix: '', label: '合作店家＋' },
+      { value: PARTNER_COUNT, suffix: '', label: '合作店家＋' },
       { value: 69, suffix: '', label: '註冊車主' },
       { value: 98, suffix: '%', label: '滿意回饋' },
     ],
@@ -80,7 +86,7 @@ export const content = {
   },
 
   trust: [
-    { value: 1, unit: '＋', label: '合作店家遍布全台' },
+    { value: PARTNER_COUNT, unit: '＋', label: '合作店家遍布全台' },
     { value: 3, unit: '大類服務', label: '美容・保養・改裝' },
     { value: 60, unit: '秒', label: '完成線上預約' },
     { value: 0, unit: '元', label: '前 50 名月費' },
@@ -116,8 +122,8 @@ export const content = {
     cta: '立即申請入駐',
     counter: {
       label: '剩餘名額',
-      left: 49,   // ← 唯一需要手動更新的數字，其他文字自動換算
-      total: 50,
+      left: RECRUIT_LEFT,
+      total: RECRUIT_TOTAL,
     },
   },
 
