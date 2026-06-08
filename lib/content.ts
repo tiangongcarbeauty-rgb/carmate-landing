@@ -30,7 +30,7 @@ export const content = {
     appStore: { url: '#' },
     googlePlay: { url: '#' },
     stats: [
-      { value: 10, suffix: '', label: '合作店家＋' },
+      { value: 1, suffix: '', label: '合作店家＋' },
       { value: 69, suffix: '', label: '註冊車主' },
       { value: 98, suffix: '%', label: '滿意回饋' },
     ],
@@ -80,7 +80,7 @@ export const content = {
   },
 
   trust: [
-    { value: 10, unit: '＋', label: '合作店家遍布全台' },
+    { value: 1, unit: '＋', label: '合作店家遍布全台' },
     { value: 3, unit: '大類服務', label: '美容・保養・改裝' },
     { value: 60, unit: '秒', label: '完成線上預約' },
     { value: 0, unit: '元', label: '前 50 名月費' },
