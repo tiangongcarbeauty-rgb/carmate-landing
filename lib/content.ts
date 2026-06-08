@@ -86,7 +86,8 @@ export const content = {
   },
 
   trust: [
-    { value: PARTNER_COUNT, unit: '＋', label: '合作店家遍布全台' },
+    // 暫時隱藏：合作店家遍布全台。要加回來解除下一行註解，並把 globals.css 的 .strip-inner 改回 repeat(4,1fr)
+    // { value: PARTNER_COUNT, unit: '＋', label: '合作店家遍布全台' },
     { value: 3, unit: '大類服務', label: '美容・保養・改裝' },
     { value: 60, unit: '秒', label: '完成線上預約' },
     { value: 0, unit: '元', label: '前 50 名月費' },
