@@ -24,6 +24,15 @@ export const metadata: Metadata = {
     icon: '/carmate-logo.png',
     apple: '/carmate-logo.png',
   },
+  openGraph: {
+    title: content.meta.title,
+    description: content.meta.description,
+    url: 'https://tgcarauto.com',
+    siteName: content.meta.brandName,
+    images: [{ url: '/carmate-logo.png', width: 512, height: 512 }],
+    locale: 'zh_TW',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
