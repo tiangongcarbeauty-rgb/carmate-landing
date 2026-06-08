@@ -244,6 +244,9 @@ export const content = {
       { icon: 'Phone',  value: '+886916789758' },
       { icon: 'MapPin', value: '台北市中正區重慶南路一段57號10樓之17' },
     ],
+    social: [
+      { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590372430581' },
+    ],
     copy: ' 俥盛科技股份有限公司',
     legal: [
       { label: '隱私權政策', href: '#' },

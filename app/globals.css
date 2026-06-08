@@ -1261,6 +1261,9 @@
   .foot-bottom .legal { display: flex; gap: 24px; }
   .foot-bottom .legal a { color: rgba(255,255,255,.5); }
   .foot-bottom .legal a:hover { color: #fff; }
+  .foot-social { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+  .foot-social-link { display: flex; align-items: center; gap: 6px; color: rgba(255,255,255,.6); font-size: 13px; text-decoration: none; transition: color .2s; }
+  .foot-social-link:hover { color: #fff; }
 }
 
 /* ---------- Reduced motion ---------- */
