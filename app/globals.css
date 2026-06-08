@@ -1248,6 +1248,12 @@
   @media (max-width: 800px) { .foot-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
   @media (max-width: 480px) { .foot-grid { grid-template-columns: 1fr; } }
   .foot-brand img { height: 36px; margin-bottom: 16px; filter: brightness(0) invert(1); }
+  .foot-wordmark {
+    display: inline-block;
+    font-family: var(--font-latin);
+    font-size: 26px; font-weight: 800; letter-spacing: -.01em;
+    color: #fff; margin-bottom: 16px;
+  }
   .foot-brand p { font-size: 14px; line-height: 1.7; max-width: 320px; }
   .foot-col h4 {
     font-size: 13px; color: #fff; font-weight: 700;

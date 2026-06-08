@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Mail, Phone, MapPin } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import { content } from '@/lib/content'
@@ -13,7 +12,7 @@ export function Footer() {
         <div className="foot-grid">
           {/* Brand column */}
           <div className="foot-brand">
-            <Image src="/carmate-logo.png" alt="Carmate" width={120} height={36} style={{ mixBlendMode: 'screen' }} />
+            <span className="foot-wordmark">Carmate</span>
             <p>{footer.tagline}</p>
           </div>
 
