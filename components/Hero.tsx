@@ -311,13 +311,6 @@ function AppleIcon() {
     </svg>
   )
 }
-function PlayIcon() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M3.6 1.95L13.95 12.3 3.6 22.65c-.42-.27-.6-.78-.6-1.27V3.22c0-.5.18-1 .6-1.27zm11.55 11.55l2.43 2.43-12.27 7.1 9.84-9.53zm3.36-2.4l3.06 1.77c.72.42.72 1.47 0 1.89l-3.06 1.77-2.7-2.71 2.7-2.72zm-3.36-1.2L5.34 1.5l12.27 7.1-2.46 2.4z"/>
-    </svg>
-  )
-}
 
 // ===== Hero section =====
 export function Hero() {
@@ -345,13 +338,6 @@ export function Hero() {
                   <span className="lines">
                     <span className="sm">Download on the</span>
                     <span className="lg">App Store</span>
-                  </span>
-                </a>
-                <a href={hero.googlePlay.url} className="store-btn" aria-label="Google Play 下載">
-                  <span className="glyph"><PlayIcon /></span>
-                  <span className="lines">
-                    <span className="sm">GET IT ON</span>
-                    <span className="lg">Google Play</span>
                   </span>
                 </a>
               </div>

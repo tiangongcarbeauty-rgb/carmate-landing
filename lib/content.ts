@@ -224,7 +224,6 @@ export const content = {
         title: '產品',
         links: [
           { label: '下載 App Store',  href: '#' },
-          { label: '下載 Google Play', href: '#' },
           { label: '給車主',           href: '#owners' },
           { label: '給店家',           href: '#merchants' },
         ],
