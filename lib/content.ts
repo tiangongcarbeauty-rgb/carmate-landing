@@ -116,7 +116,7 @@ export const content = {
     cta: '立即申請入駐',
     counter: {
       label: '剩餘名額',
-      left: 40,   // ← 唯一需要手動更新的數字，其他文字自動換算
+      left: 49,   // ← 唯一需要手動更新的數字，其他文字自動換算
       total: 50,
     },
   },
