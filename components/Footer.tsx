@@ -13,7 +13,7 @@ export function Footer() {
         <div className="foot-grid">
           {/* Brand column */}
           <div className="foot-brand">
-            <Image src="/carmate-logo.png" alt="Carmate" width={120} height={36} />
+            <Image src="/carmate-logo.png" alt="Carmate" width={120} height={36} style={{ mixBlendMode: 'screen' }} />
             <p>{footer.tagline}</p>
           </div>
 
