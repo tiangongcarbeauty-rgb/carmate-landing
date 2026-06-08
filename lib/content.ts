@@ -203,10 +203,10 @@ export const content = {
       note: '＊ 為必填欄位',
     },
     fields: {
-      shop:    { label: '店家名稱',   placeholder: '例：極速車業',        autocomplete: 'organization' },
-      contact: { label: '聯絡人姓名', placeholder: '例：王小明',           autocomplete: 'name' },
-      phone:   { label: '手機號碼',   placeholder: '例：0912 345 678',    autocomplete: 'tel' },
-      email:   { label: 'Email',      placeholder: 'contact@gmail.com', autocomplete: 'email' },
+      shop:    { label: '店家名稱',   placeholder: '',  autocomplete: 'organization' },
+      contact: { label: '聯絡人姓名', placeholder: '',  autocomplete: 'name' },
+      phone:   { label: '手機號碼',   placeholder: '',  autocomplete: 'tel' },
+      email:   { label: 'Email',      placeholder: '',  autocomplete: 'email' },
       service: {
         label: '主要服務類型',
         options: [
