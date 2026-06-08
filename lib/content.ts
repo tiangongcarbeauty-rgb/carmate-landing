@@ -126,6 +126,16 @@ export const content = {
       left: RECRUIT_LEFT,
       total: RECRUIT_TOTAL,
     },
+    // 省錢試算卡：標準月費 → 創始夥伴 0 元（年省自動換算 = 月費 × 12）
+    savings: {
+      label: '創始夥伴・省多少',
+      standardLabel: '標準月費',
+      standardPrice: 799,
+      foundingLabel: '創始夥伴',
+      foundingPrice: 0,
+      saveCaption: '一年現省',
+      foot: '限量前 50 名・終生免月費',
+    },
   },
 
   process: {

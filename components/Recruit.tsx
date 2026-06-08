@@ -7,10 +7,11 @@ import { Reveal } from './Reveal'
 
 export function Recruit() {
   const { recruit } = content
-  const { counter } = recruit
+  const { counter, savings } = recruit
   const filled = counter.total - counter.left
   const fillPct = Math.round((filled / counter.total) * 100)
   const footText = `${filled} 間已成功媒合，最後 ${counter.left} 席即將額滿`
+  const yearSave = (savings.standardPrice - savings.foundingPrice) * 12
   const barRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -61,6 +62,26 @@ export function Recruit() {
               <div className="counter-foot">{footText}</div>
             </div>
             */}
+
+            {/* Savings card — 免月費省錢試算 */}
+            <div className="recruit-savings">
+              <div className="l">{savings.label}</div>
+              <div className="srows">
+                <div className="srow">
+                  <span className="k">{savings.standardLabel}</span>
+                  <span className="v strike">NT${savings.standardPrice.toLocaleString()} / 月</span>
+                </div>
+                <div className="srow">
+                  <span className="k">{savings.foundingLabel}</span>
+                  <span className="v free">NT${savings.foundingPrice.toLocaleString()} / 月</span>
+                </div>
+              </div>
+              <div className="save-big num">
+                <span className="cap">{savings.saveCaption}</span>
+                <span className="amt">NT$ {yearSave.toLocaleString()}</span>
+              </div>
+              <div className="save-foot">{savings.foot}</div>
+            </div>
           </div>
         </Reveal>
       </div>
