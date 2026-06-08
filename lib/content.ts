@@ -47,7 +47,7 @@ export const content = {
       searchPlaceholder: '搜尋服務、店家或商品',
       login: {
         title: '請登入',
-        sub: '登入享專屬會員優惠',
+        sub: '登入享會員優惠',
         bindCar: '綁定車輛',
         points: { label: '回饋點數', value: 0, cta: '立即賺點' },
       },

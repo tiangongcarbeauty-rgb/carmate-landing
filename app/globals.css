@@ -602,7 +602,7 @@
     background: radial-gradient(circle, rgba(0,144,238,.30), transparent 70%);
     pointer-events: none;
   }
-  .app-login .row1 { display: flex; align-items: center; justify-content: space-between; gap: 8px; position: relative; }
+  .app-login .row1 { display: flex; align-items: center; gap: 8px; position: relative; }
   .app-login .av {
     width: 32px; height: 32px;
     border-radius: 999px;
@@ -611,9 +611,10 @@
     color: rgba(255,255,255,.75);
     flex-shrink: 0;
   }
-  .app-login .hi { display: flex; align-items: center; gap: 8px; min-width: 0; }
-  .app-login .hi .lg { font-size: 14px; font-weight: 700; white-space: nowrap; }
-  .app-login .hi .sm { font-size: 10px; color: rgba(255,255,255,.65); margin-top: 1px; white-space: nowrap; }
+  .app-login .hi { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 1; }
+  .app-login .hi > span:last-child { min-width: 0; overflow: hidden; }
+  .app-login .hi .lg { font-size: 14px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .app-login .hi .sm { font-size: 10px; color: rgba(255,255,255,.65); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .app-login .car-pill {
     display: inline-flex;
     align-items: center;
