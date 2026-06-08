@@ -586,11 +586,11 @@
     color: var(--gray-400);
   }
   .app-login {
-    margin: 0 16px 14px;
+    margin: 0 10px 14px;
     background: linear-gradient(135deg, #0E1A2E 0%, #08263F 100%);
     color: #fff;
     border-radius: 14px;
-    padding: 14px;
+    padding: 12px;
     position: relative;
     overflow: hidden;
   }
@@ -610,18 +610,20 @@
     display: inline-flex; align-items: center; justify-content: center;
     color: rgba(255,255,255,.75);
   }
-  .app-login .hi { display: flex; align-items: center; gap: 8px; }
-  .app-login .hi .lg { font-size: 14px; font-weight: 700; }
-  .app-login .hi .sm { font-size: 10px; color: rgba(255,255,255,.65); margin-top: 1px; }
+  .app-login .hi { display: flex; align-items: center; gap: 6px; min-width: 0; }
+  .app-login .hi .lg { font-size: 13px; font-weight: 700; white-space: nowrap; }
+  .app-login .hi .sm { font-size: 9px; color: rgba(255,255,255,.65); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .app-login .car-pill {
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    padding: 5px 10px;
+    padding: 4px 8px;
     background: rgba(255,255,255,.10);
     border-radius: 999px;
-    font-size: 11px;
+    font-size: 10px;
     color: rgba(255,255,255,.85);
+    white-space: nowrap;
+    flex-shrink: 0;
   }
   .app-login .row2 {
     display: flex;
