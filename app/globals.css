@@ -602,51 +602,55 @@
     background: radial-gradient(circle, rgba(0,144,238,.30), transparent 70%);
     pointer-events: none;
   }
-  .app-login .row1 { display: flex; align-items: center; justify-content: space-between; position: relative; }
+  .app-login .row1 { display: flex; align-items: flex-start; position: relative; padding-right: 72px; }
   .app-login .av {
-    width: 32px; height: 32px;
+    width: 28px; height: 28px;
     border-radius: 999px;
     background: rgba(255,255,255,.15);
     display: inline-flex; align-items: center; justify-content: center;
     color: rgba(255,255,255,.75);
+    flex-shrink: 0;
   }
   .app-login .hi { display: flex; align-items: center; gap: 6px; min-width: 0; }
   .app-login .hi .lg { font-size: 13px; font-weight: 700; white-space: nowrap; }
   .app-login .hi .sm { font-size: 9px; color: rgba(255,255,255,.65); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .app-login .car-pill {
+    position: absolute;
+    right: 0; top: 0;
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    padding: 4px 8px;
+    gap: 3px;
+    padding: 4px 7px;
     background: rgba(255,255,255,.10);
     border-radius: 999px;
     font-size: 10px;
     color: rgba(255,255,255,.85);
     white-space: nowrap;
-    flex-shrink: 0;
   }
   .app-login .row2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 12px;
+    margin-top: 10px;
     padding-top: 10px;
     border-top: 1px solid rgba(255,255,255,.10);
     position: relative;
   }
   .app-login .row2 .pt {
-    display: inline-flex; align-items: center; gap: 6px;
-    font-size: 11px; color: rgba(255,255,255,.7);
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 10px; color: rgba(255,255,255,.7);
+    white-space: nowrap;
   }
   .app-login .row2 .pt b {
     color: #fff;
     font-family: var(--font-latin);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
   }
   .app-login .row2 .lnk {
-    font-size: 11px;
+    font-size: 10px;
     color: var(--blue-300);
+    white-space: nowrap;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
