@@ -83,7 +83,7 @@ export const content = {
     { value: 10, unit: '＋', label: '合作店家遍布全台' },
     { value: 3, unit: '大類服務', label: '美容・保養・改裝' },
     { value: 60, unit: '秒', label: '完成線上預約' },
-    { value: 24, unit: '/7', label: '客服與通知' },
+    { value: 0, unit: '元', label: '前 50 名月費' },
   ],
 
   owners: {
@@ -148,8 +148,8 @@ export const content = {
         features: [
           '店家完整曝光與預約系統',
           '店家頁面與服務項目自主設定',
-          '專屬「創始夥伴」標章',
-          '優先推薦曝光與商城進駐權',
+          '專屬商務窗口與每月對帳報表',
+          '免綁約・隨時暫停或退出',
         ],
         note: '* 須於額滿前完成入駐與審核，名額用罄即不再開放。',
       },
@@ -218,7 +218,7 @@ export const content = {
   },
 
   footer: {
-    tagline: 'Carmate（卡媒）是台灣車主的智慧養車生態系。一個 App，搞定養車大小事。',
+    tagline: 'Carmate是台灣車主的智慧養車生態系。一個 App，搞定養車大小事。',
     columns: [
       {
         title: '產品',
