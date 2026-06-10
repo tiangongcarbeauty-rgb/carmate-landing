@@ -195,7 +195,6 @@ export const content = {
     sub: '您不需準備任何文件，先填表單，後續流程我們會帶著您一步步走。',
     bullets: [
       '免綁約、免上架費',
-      '__QUOTA__',
       '您的聯絡資訊僅供 Carmate 商務專員使用',
     ],
     card: {
