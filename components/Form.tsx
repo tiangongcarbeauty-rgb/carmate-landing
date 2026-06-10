@@ -17,8 +17,7 @@ type FormState = {
 }
 type Errors = Partial<Record<keyof FormState, string>>
 
-const { form, recruit } = content
-const { counter } = recruit
+const { form } = content
 
 function validate(values: FormState): Errors {
   const errors: Errors = {}
@@ -93,17 +92,12 @@ export function Form() {
             <h2 className="section-title" style={{ whiteSpace: 'pre-line' }}>{form.title}</h2>
             <p className="section-sub">{form.sub}</p>
             <ul className="form-bullets">
-              {form.bullets.map((b) => {
-                const text = b === '__QUOTA__'
-                  ? `創始夥伴名額尚餘 ${counter.left} / ${counter.total}`
-                  : b
-                return (
-                  <li key={b}>
-                    <CheckCircle2 size={20} />
-                    <span dangerouslySetInnerHTML={{ __html: text.replace(/(\d+ \/ \d+)/, '<strong style="color:#fff">$1</strong>') }} />
-                  </li>
-                )
-              })}
+              {form.bullets.map((b) => (
+                <li key={b}>
+                  <CheckCircle2 size={20} />
+                  <span>{b}</span>
+                </li>
+              ))}
             </ul>
           </Reveal>
 
