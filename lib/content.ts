@@ -261,6 +261,7 @@ export const content = {
     ],
     social: [
       { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590372430581' },
+      { label: 'Instagram', href: 'https://www.instagram.com/carmate2026/' },
     ],
     copy: ' 俥盛科技有限公司',
     legal: [
