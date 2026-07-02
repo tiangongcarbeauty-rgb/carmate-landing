@@ -216,6 +216,8 @@ export const content = {
       },
     },
     submit:  { label: '送出申請', loading: '送出中...' },
+    submitFailed: '申請送出失敗，請稍後再試，或直接來電',
+    fallbackPhone: { display: '0916-789-758', tel: 'tel:+886916789758' },
     consent: '送出即表示您同意我們以您提供的資訊聯繫您。',
     errors: {
       shopRequired:    '請填寫店家名稱',
@@ -239,9 +241,8 @@ export const content = {
       {
         title: '產品',
         links: [
-          { label: '下載 App Store',  href: '#' },
-          { label: '給車主',           href: '#owners' },
-          { label: '給店家',           href: '#merchants' },
+          { label: '給車主', href: '#owners' },
+          { label: '給店家', href: '#merchants' },
         ],
       },
       {
@@ -249,15 +250,13 @@ export const content = {
         links: [
           { label: '招商方案', href: '#recruit' },
           { label: '店家入駐', href: '#form' },
-          { label: '商城合作', href: '#' },
-          { label: '媒體聯繫', href: '#' },
         ],
       },
     ],
     contact: [
-      { icon: 'Mail',   value: 'tiangongcarbeauty@gmail.com' },
-      { icon: 'Phone',  value: '+886916789758' },
-      { icon: 'MapPin', value: '台北市中正區重慶南路一段57號10樓之17' },
+      { icon: 'Mail',   value: 'tiangongcarbeauty@gmail.com', href: 'mailto:tiangongcarbeauty@gmail.com' },
+      { icon: 'Phone',  value: '0916-789-758', href: 'tel:+886916789758' },
+      { icon: 'MapPin', value: '台北市中正區重慶南路一段57號10樓之17', href: '' },
     ],
     social: [
       { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590372430581' },
@@ -265,9 +264,7 @@ export const content = {
     ],
     copy: ' 俥盛科技有限公司',
     legal: [
-      { label: '隱私權政策', href: '#' },
-      { label: '服務條款',   href: '#' },
-      { label: 'Cookie 設定', href: '#' },
+      { label: '隱私權政策', href: '/privacy' },
     ],
   },
 } as const

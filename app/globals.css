@@ -386,6 +386,19 @@
   .store-btn .lines { display: flex; flex-direction: column; line-height: 1.1; text-align: left; }
   .store-btn .lines .sm { font-size: 11px; opacity: .75; }
   .store-btn .lines .lg { font-size: 16px; font-weight: 600; }
+  /* App 尚未上架：不可點擊的「即將上線」樣式 */
+  .store-soon { cursor: default; opacity: .85; position: relative; }
+  .store-soon:hover { transform: none; background: var(--gray-900); }
+  .soon-tag {
+    position: absolute;
+    top: -9px; right: -8px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: var(--brand);
+    color: #fff;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: .04em;
+  }
 
   /* Hero stats */
   .hero-stats {
@@ -1270,6 +1283,17 @@
   .submit:hover { background: var(--brand); transform: translateY(-1px); }
   .submit:disabled { opacity: .6; cursor: not-allowed; transform: none; background: var(--gray-700); }
   .form-foot { margin-top: 16px; font-size: 12px; color: var(--fg-3); text-align: center; }
+  .form-fail {
+    margin-top: 14px;
+    padding: 12px 16px;
+    border-radius: var(--r-md);
+    background: #FFF2F2;
+    border: 1px solid #FFD5D5;
+    color: var(--danger);
+    font-size: 14px;
+    text-align: center;
+  }
+  .form-fail a { color: var(--danger); font-weight: 700; text-decoration: underline; }
 
   /* Success state */
   .form-success { text-align: center; padding: 32px 16px; }
@@ -1315,6 +1339,8 @@
   .foot-col a:hover { color: #fff; }
   .contact-row { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; }
   .contact-row svg { color: var(--blue-300); flex-shrink: 0; margin-top: 3px; }
+  .contact-row a { color: rgba(255,255,255,.7); }
+  .contact-row a:hover { color: #fff; }
   .foot-bottom {
     border-top: 1px solid rgba(255,255,255,.10);
     padding-top: 24px;

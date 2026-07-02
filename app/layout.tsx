@@ -18,6 +18,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tgcarauto.com'),
   title: content.meta.title,
   description: content.meta.description,
   keywords: ['汽車美容', '汽車保養', '改裝升級', '找店家', '車主App', '線上預約', '汽車服務平台', 'Carmate', '卡媒', '台灣車主', '保養廠', '汽車APP'],

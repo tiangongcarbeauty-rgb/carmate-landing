@@ -31,5 +31,7 @@ export async function POST(req: NextRequest) {
     console.error('[recruit] fetch error:', err)
   }
 
-  return NextResponse.json({ ok: true, status })
+  // 只有 Google 表單真的收到（2xx/3xx）才算成功，讓前端能顯示備援聯絡方式
+  const ok = status >= 200 && status < 400
+  return NextResponse.json({ ok, status })
 }

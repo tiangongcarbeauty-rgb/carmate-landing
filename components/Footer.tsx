@@ -39,7 +39,9 @@ export function Footer() {
                 return (
                   <li key={item.value} className="contact-row">
                     {Icon && <Icon size={16} />}
-                    <span>{item.value}</span>
+                    {item.href
+                      ? <a href={item.href}>{item.value}</a>
+                      : <span>{item.value}</span>}
                   </li>
                 )
               })}

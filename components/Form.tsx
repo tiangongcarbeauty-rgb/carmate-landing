@@ -42,6 +42,7 @@ export function Form() {
   const [errors, setErrors]   = useState<Errors>({})
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
+  const [failed, setFailed]   = useState(false)
 
   const set = (field: keyof FormState) => (
     e: React.ChangeEvent<HTMLInputElement>
@@ -61,23 +62,32 @@ export function Form() {
     const errs = validate(values)
     if (Object.keys(errs).length) { setErrors(errs); return }
     setLoading(true)
+    setFailed(false)
 
+    let ok = false
     try {
-      await fetch('/api/recruit', {
+      const res = await fetch('/api/recruit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values),
       })
+      const data = await res.json()
+      ok = data.ok === true
     } catch {
-      // 視為成功，資料已送出
+      ok = false
     }
 
     setLoading(false)
-    setSuccess(true)
+    if (ok) {
+      setSuccess(true)
+    } else {
+      setFailed(true)
+    }
   }
 
   const reset = () => {
     setSuccess(false)
+    setFailed(false)
     setValues({ shop: '', contact: '', phone: '', email: '', service: '' })
     setErrors({})
   }
@@ -222,6 +232,12 @@ export function Form() {
                       <span>{loading ? form.submit.loading : form.submit.label}</span>
                       {!loading && <ArrowRight size={16} />}
                     </button>
+                    {failed && (
+                      <div className="form-fail" role="alert">
+                        {form.submitFailed}{' '}
+                        <a href={form.fallbackPhone.tel}>{form.fallbackPhone.display}</a>
+                      </div>
+                    )}
                     <div className="form-foot">{form.consent}</div>
                   </form>
                 </>

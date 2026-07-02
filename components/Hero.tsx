@@ -333,13 +333,14 @@ export function Hero() {
               </h1>
               <p className="lead">{hero.lead}</p>
               <div className="download-row">
-                <a href={hero.appStore.url} className="store-btn" aria-label="App Store 下載">
+                <span className="store-btn store-soon" aria-label="App Store 即將上線">
                   <span className="glyph"><AppleIcon /></span>
                   <span className="lines">
-                    <span className="sm">Download on the</span>
+                    <span className="sm">即將上線</span>
                     <span className="lg">App Store</span>
                   </span>
-                </a>
+                  <span className="soon-tag">Coming Soon</span>
+                </span>
               </div>
               {/* 暫時隱藏：Hero 三個數字（合作店家／註冊車主／滿意回饋）。要加回來把下方整段解除註解 */}
               {/*

@@ -24,7 +24,7 @@ export function Nav() {
       <header className={`nav${scrolled ? ' is-scrolled' : ''}`} id="nav">
         <div className="wrap nav-inner">
           <a href="#top" className="brand">
-            <Image src="/carmate-logo.png" alt={nav.cta.label} width={120} height={32} priority />
+            <Image src="/carmate-logo.png" alt="Carmate" width={120} height={32} priority />
           </a>
 
           <nav className="nav-links" aria-label="主導覽">
