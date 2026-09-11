@@ -21,17 +21,17 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://tgcarauto.com'),
   title: content.meta.title,
   description: content.meta.description,
-  keywords: ['汽車美容', '汽車保養', '改裝升級', '找店家', '車主App', '線上預約', '汽車服務平台', 'Carmate', '卡媒', '台灣車主', '保養廠', '汽車APP'],
+  keywords: ['汽車美容', '汽車美容預約', '洗車預約', '鍍膜', '線上預約', '汽車美容店家招募', 'Carllection', '雙北汽車美容', '車聚', '汽車APP'],
   icons: {
-    icon: '/carmate-logo.png',
-    apple: '/carmate-logo.png',
+    icon: '/carllection-icon.png',
+    apple: '/carllection-icon.png',
   },
   openGraph: {
     title: content.meta.title,
     description: content.meta.description,
     url: 'https://tgcarauto.com',
     siteName: content.meta.brandName,
-    images: [{ url: '/carmate-logo.png', width: 512, height: 512 }],
+    images: [{ url: '/carllection-og.png', width: 1200, height: 630 }],
     locale: 'zh_TW',
     type: 'website',
   },
@@ -43,8 +43,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'MobileApplication',
-  name: 'Carmate',
-  alternateName: '卡媒',
+  name: 'Carllection',
   description: content.meta.description,
   url: 'https://tgcarauto.com',
   applicationCategory: 'LifestyleApplication',
@@ -52,9 +51,9 @@ const jsonLd = {
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'TWD' },
   publisher: {
     '@type': 'Organization',
-    name: 'Carmate Inc.',
+    name: '俥盛科技有限公司',
     url: 'https://tgcarauto.com',
-    logo: 'https://tgcarauto.com/carmate-logo.png',
+    logo: 'https://tgcarauto.com/carllection-icon.png',
   },
 }
 

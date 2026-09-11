@@ -6,11 +6,10 @@ const PARTNER_COUNT = RECRUIT_TOTAL - RECRUIT_LEFT
 
 export const content = {
   meta: {
-    title: 'Carmate ｜ 養車大小事，App 全搞定',
-    description: 'Carmate 是台灣車主的智慧養車生態系 App，串接汽車美容、保養維修、改裝升級三大服務。',
+    title: 'Carllection｜汽車美容預約平台',
+    description: '附近汽車美容店的價格、評價、可預約時段一次看清楚，線上預約、到店才付款。店家招募中，前 50 家創始店家終生免月費。',
     lang: 'zh-Hant' as const,
-    brandName: 'Carmate',
-    brandNameZh: '卡媒',
+    brandName: 'Carllection',
   },
 
   nav: {
@@ -32,7 +31,7 @@ export const content = {
       line1: '養車大小事，',
       accent: 'App 全搞定。',
     },
-    lead: 'Carmate 是專為台灣車主打造的智慧養車生態系。從汽車美容、保養維修到改裝升級，一鍵比價、線上預約、即時回饋。',
+    lead: 'Carllection 是專為台灣車主打造的智慧養車生態系。從汽車美容、保養維修到改裝升級，一鍵比價、線上預約、即時回饋。',
     appStore: { url: '#' },
     googlePlay: { url: '#' },
     stats: [
@@ -46,10 +45,10 @@ export const content = {
       { text: '就近找店', icon: 'MapPin' },
       { text: '改裝升級', icon: 'Gauge' },
       { text: '點數回饋', icon: 'Gem' },
-      { text: '車友圈', icon: 'UsersRound' },
+      { text: '車聚', icon: 'UsersRound' },
     ],
     phoneScreen: {
-      appName: 'Carmate',
+      appName: 'Carllection',
       searchPlaceholder: '搜尋服務、店家或商品',
       login: {
         title: '請登入',
@@ -61,7 +60,7 @@ export const content = {
         { label: '汽車美容', icon: 'Sparkles' },
         { label: '定期保養', icon: 'Wrench' },
         { label: '動力改裝', icon: 'Gauge' },
-        { label: '車友圈', icon: 'UsersRound' },
+        { label: '車聚', icon: 'UsersRound' },
       ],
       promo: {
         tag: '專業汽車美容',
@@ -78,7 +77,7 @@ export const content = {
       tabBar: [
         { label: '首頁', icon: 'Home', active: true },
         { label: '店家預約', icon: 'CalendarClock', active: false },
-        { label: '車友圈', icon: 'UsersRound', active: false },
+        { label: '車聚', icon: 'UsersRound', active: false },
         { label: '商城', icon: 'ShoppingBag', active: false },
         { label: '我的', icon: 'User', active: false },
       ],
@@ -101,14 +100,14 @@ export const content = {
       { icon: 'Search', title: '就近找店', desc: '定位附近的美容、保養、改裝專業店家，篩選服務、距離、價格、評分。' },
       { icon: 'Layers', title: '多家比價', desc: '同一服務一次比較多家報價與評價，做出最划算的決定。' },
       { icon: 'CalendarClock', title: '線上預約', desc: '查看店家可預約時段，60 秒完成預約，免電話、免來回確認。' },
-      { icon: 'UsersRound', title: '車友圈互動', desc: '加入車友圈分享愛車、交流改裝心得，邀請好友還能賺回饋點數。' },
+      { icon: 'UsersRound', title: '車聚活動', desc: '發起或報名車聚，認識同好、交流愛車心得，邀請好友還能賺回饋點數。' },
     ],
   },
 
   merchants: {
     eyebrow: 'FOR MERCHANTS',
     title: '給店家，把空檔變成穩定營收',
-    sub: 'Carmate 把車主直接帶到您的店門口。我們處理曝光、預約與會員管理，您專心做擅長的事。',
+    sub: 'Carllection 把車主直接帶到您的店門口。我們處理曝光、預約與會員管理，您專心做擅長的事。',
     cards: [
       { num: '01', title: '精準流量曝光', desc: '在地車主搜尋服務時即見店家，依距離、評價、價格智慧排序，省下廣告投放成本。' },
       { num: '02', title: '填滿空檔時段', desc: '線上行事曆讓車主自助預約您的閒置工位，平日離峰時段也能穩定接單。' },
@@ -119,7 +118,7 @@ export const content = {
   recruit: {
     eyebrow: '早鳥優惠・名額限量',
     title: '前 50 間 合作店家，終生免月費。',
-    body: 'Carmate 正在打造全台最完整的養車服務網絡。前 50 間入駐店家可享一輩子免月費合作方案，優先曝光、優先媒合、優先進駐商城。我們把最好的給最早相信我們的夥伴。',
+    body: 'Carllection 正在打造全台最完整的養車服務網絡。前 50 間入駐店家可享一輩子免月費合作方案，優先曝光、優先媒合、優先進駐商城。我們把最好的給最早相信我們的夥伴。',
     cta: '立即申請入駐',
     counter: {
       label: '剩餘名額',
@@ -130,7 +129,7 @@ export const content = {
     savings: {
       label: '創始夥伴・省多少',
       standardLabel: '標準月費',
-      standardPrice: 799,
+      standardPrice: 699,
       foundingLabel: '創始夥伴',
       foundingPrice: 0,
       saveCaption: '一年現省',
@@ -165,7 +164,7 @@ export const content = {
         features: [
           '店家完整曝光與預約系統',
           '店家頁面與服務項目自主設定',
-          '專屬商務窗口與每月對帳報表',
+          '專屬商務窗口與每週結算報表',
           '免綁約・隨時暫停或退出',
         ],
         note: '* 須於額滿前完成入駐與審核，名額用罄即不再開放。',
@@ -175,16 +174,16 @@ export const content = {
         tag: '標準方案',
         name: '一般合作方案',
         currency: 'NT$',
-        price: 799,
+        price: 699,
         per: '/ 月',
         sub: '適用於前 50 名額滿之後加入的合作店家。',
         features: [
           '店家完整曝光與預約系統',
           '店家頁面與服務項目自主設定',
-          '專屬商務窗口與每月對帳報表',
+          '專屬商務窗口與每週結算報表',
           '免綁約・隨時暫停或退出',
         ],
-        note: '* 訂單抽成另計，依服務類別合作合約為準。',
+        note: '* 另收成交訂單平台服務費 15%，每週結算。',
       },
     ],
   },
@@ -195,7 +194,7 @@ export const content = {
     sub: '您不需準備任何文件，先填表單，後續流程我們會帶著您一步步走。',
     bullets: [
       '免綁約、免上架費',
-      '您的聯絡資訊僅供 Carmate 商務專員使用',
+      '您的聯絡資訊僅供 Carllection 商務專員使用',
     ],
     card: {
       title: '店家入駐申請',
@@ -230,13 +229,13 @@ export const content = {
     },
     success: {
       title: '申請已送出！',
-      body:  '感謝您的申請。Carmate 商務專員將於 1–3 個工作天內透過 Email 與您聯繫，請留意您的收件匣。',
+      body:  '感謝您的申請。Carllection 商務專員將於 1–3 個工作天內透過 Email 與您聯繫，請留意您的收件匣。',
       back:  '回到表單',
     },
   },
 
   footer: {
-    tagline: 'Carmate是台灣車主的智慧養車生態系。一個 App，搞定養車大小事。',
+    tagline: 'Carllection 是台灣車主的智慧養車生態系。一個 App，搞定養車大小事。',
     columns: [
       {
         title: '產品',
@@ -254,13 +253,13 @@ export const content = {
       },
     ],
     contact: [
-      { icon: 'Mail',   value: 'tiangongcarbeauty@gmail.com', href: 'mailto:tiangongcarbeauty@gmail.com' },
+      { icon: 'Mail',   value: 'carllectiontw@gmail.com', href: 'mailto:carllectiontw@gmail.com' },
       { icon: 'Phone',  value: '0916-789-758', href: 'tel:+886916789758' },
       { icon: 'MapPin', value: '台北市中正區重慶南路一段57號10樓之17', href: '' },
     ],
     social: [
       { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590372430581' },
-      { label: 'Instagram', href: 'https://www.instagram.com/carmate2026/' },
+      { label: 'Instagram', href: 'https://www.instagram.com/carllection.tw/' },
     ],
     copy: ' 俥盛科技有限公司',
     legal: [

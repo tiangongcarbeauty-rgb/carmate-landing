@@ -12,7 +12,7 @@ export function Footer() {
         <div className="foot-grid">
           {/* Brand column */}
           <div className="foot-brand">
-            <span className="foot-wordmark">Carmate</span>
+            <span className="foot-wordmark">Carllection</span>
             <p>{footer.tagline}</p>
           </div>
 

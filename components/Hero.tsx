@@ -193,7 +193,7 @@ const CHIP_POS: React.CSSProperties[] = [
   { top: '44%',    left:  '0%',  animationDelay: '-0.8s' },  // 就近找店  — mid-left
   { top: '44%',    right: '0%',  animationDelay: '-1.8s' },  // 改裝升級  — mid-right
   { bottom: '10%', left:  '1%',  animationDelay: '-1.0s' },  // 點數回饋  — bottom-left
-  { bottom: '10%', right: '1%',  animationDelay: '-2.2s' },  // 車友圈   — bottom-right
+  { bottom: '10%', right: '1%',  animationDelay: '-2.2s' },  // 車聚     — bottom-right
 ]
 
 function Chips() {
@@ -271,7 +271,7 @@ function PhoneStage() {
         {/* 3-D tilt wrapper */}
         <div className="stage-tilt" ref={tiltRef}>
           {/* iPhone */}
-          <div className="phone" aria-label="Carmate App 預覽">
+          <div className="phone" aria-label="Carllection App 預覽">
             <div className="phone-btns-l" aria-hidden="true"><i /><i /><i /></div>
             <div className="phone-btns-r" aria-hidden="true" />
             <div className="phone-frame">

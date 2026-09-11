@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '隱私權政策｜Carmate',
-  description: 'Carmate 隱私權政策：說明我們如何蒐集、使用與保護您的個人資料。',
+  title: '隱私權政策｜Carllection',
+  description: 'Carllection 隱私權政策：說明我們如何蒐集、使用與保護您的個人資料。',
   robots: { index: true, follow: true },
 }
 
 const S: Record<string, React.CSSProperties> = {
   page: { maxWidth: 720, margin: '0 auto', padding: '64px 24px 96px', lineHeight: 1.8 },
-  back: { display: 'inline-block', marginBottom: 32, fontSize: 14, color: '#0090EE', textDecoration: 'none' },
+  back: { display: 'inline-block', marginBottom: 32, fontSize: 14, color: '#0A0A0A', textDecoration: 'underline', textUnderlineOffset: 4 },
   h1: { fontSize: 32, fontWeight: 800, marginBottom: 8, letterSpacing: '-0.02em' },
   updated: { fontSize: 13, color: '#888', marginBottom: 40 },
   h2: { fontSize: 20, fontWeight: 700, marginTop: 40, marginBottom: 12 },
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
       <div style={S.updated}>最後更新日期：2026 年 7 月 2 日</div>
 
       <p style={S.p}>
-        俥盛科技有限公司（以下簡稱「本公司」）經營 Carmate 網站（tgcarauto.com，以下簡稱「本網站」）。
+        俥盛科技有限公司（以下簡稱「本公司」）經營 Carllection 網站（tgcarauto.com，以下簡稱「本網站」）。
         本公司重視您的個人資料保護，依據中華民國《個人資料保護法》訂定本隱私權政策，
         說明本網站如何蒐集、處理及利用您的個人資料。
       </p>
@@ -77,7 +77,7 @@ export default function PrivacyPage() {
       <p style={S.p}>
         如對本隱私權政策有任何疑問，或欲行使個人資料相關權利，請聯繫：<br />
         俥盛科技有限公司<br />
-        Email：tiangongcarbeauty@gmail.com<br />
+        Email：carllectiontw@gmail.com<br />
         電話：0916-789-758<br />
         地址：台北市中正區重慶南路一段57號10樓之17
       </p>

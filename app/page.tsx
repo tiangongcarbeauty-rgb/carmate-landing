@@ -1,29 +1,6 @@
-import { Nav }        from '@/components/Nav'
-import { Hero }       from '@/components/Hero'
-import { TrustStrip } from '@/components/TrustStrip'
-import { Owners }     from '@/components/Owners'
-import { Merchants }  from '@/components/Merchants'
-import { Recruit }    from '@/components/Recruit'
-import { Process }    from '@/components/Process'
-import { Pricing }    from '@/components/Pricing'
-import { Form }       from '@/components/Form'
-import { Footer }     from '@/components/Footer'
+import { PreviewPage } from '@/components/v2/PreviewPage'
 
-export default function Home() {
-  return (
-    <>
-      <Nav />
-      <main>
-        <Hero />
-        <TrustStrip />
-        <Owners />
-        <Merchants />
-        <Recruit />
-        <Process />
-        <Pricing />
-        <Form />
-      </main>
-      <Footer />
-    </>
-  )
+// 首頁：車主版（預設）／店家版（?for=shop）
+export default function Home({ searchParams }: { searchParams: { for?: string } }) {
+  return <PreviewPage initialAudience={searchParams.for === 'shop' ? 'merchant' : 'owner'} />
 }

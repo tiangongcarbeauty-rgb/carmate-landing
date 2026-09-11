@@ -169,6 +169,11 @@
     font-size: 18px;
   }
   .brand img { height: 32px; width: auto; }
+  .brand-wordmark {
+    font-family: var(--font-latin);
+    font-size: 19px; font-weight: 700; letter-spacing: -.02em;
+    color: var(--fg-1);
+  }
   .nav-links { display: flex; align-items: center; gap: 32px; }
   .nav-links a {
     font-size: 14px;
